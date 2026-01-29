@@ -9,19 +9,19 @@ class Cliente extends Model {
 
 Cliente.init(
     {
-        id: {
-            type: DataTypes.INTEGER,
-            autoIncrement: true,
+        id: {//ponemos exactamente los mismos campos que en la base de datos con los mismos nombres
+            type: DataTypes.INTEGER,//tipo de dato
+            autoIncrement: true,//esto solo si es un campo auto incrementable
             primaryKey: true,
         },
         nombre: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: false,//esto significa que no puede ser nulo
         },
         email: {
             type: DataTypes.STRING,
             allowNull: false,
-            unique: true,
+            unique: true,//esto significa que no puede haber dos emails iguales
         },
     },
     {

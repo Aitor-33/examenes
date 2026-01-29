@@ -3,6 +3,7 @@ import { Router } from 'express';
 
 const router = Router();
 
+// Definición de rutas para clientes
 router.get('/clientes', obtenerClientes);
 router.post('/clientes', crearCliente);
 router.delete('/clientes/:id', eliminarCliente);

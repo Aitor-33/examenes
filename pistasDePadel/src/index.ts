@@ -21,3 +21,17 @@ sequelize.sync().then(() => {
     console.log('Servidor escuchando en puerto 3000');
   });
 });
+
+
+//recuerda siempre copiar el ts config y el package json de otro proyecto para no tener errores
+
+//lo primero es hacer el npm init -y para crear el package json
+
+// npm install typescript ts-node nodemon @types/node --save-dev
+// npm install express sequelize mysql2 dotenv
+// npm install @types/express --save-dev
+//npm install dotenv   este hay que ponerle en el archivo database.ts
+
+
+
+// para iniciar el proyecto en desarrollo npm run dev
